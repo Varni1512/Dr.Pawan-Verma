@@ -33,13 +33,13 @@ export default function Hero() {
         <div className="flex flex-col items-center md:items-start relative w-full md:w-auto">
           <div className="relative pt-5 pl-0 md:pl-3 w-full md:w-auto flex justify-center md:justify-start">
             {/* Border container - hidden on small screens */}
-            <div className="absolute top-0 left-0 hidden md:block w-[631px] h-[382px] border-2 border-[#F4E9CD] z-0"></div>
+            <div className="absolute top-0 left-0 hidden md:block w-[731px] h-[482px] border-2 border-[#F4E9CD] z-0"></div>
 
             {/* Image */}
             <img
               src="/pawan.jpg"
               alt="Dr. Pawan Verma"
-              className="relative z-10 w-full max-w-[400px] md:max-w-none md:w-[661px] h-auto md:h-[382px] rounded-[13px] object-cover md:-translate-x-[2px] md:-translate-y-[2px]"
+              className="relative z-10 w-full max-w-[400px] md:max-w-none md:w-[741px] h-auto md:h-[490px] rounded-[13px] object-cover md:-translate-x-[2px] md:-translate-y-[2px]"
             />
           </div>
 
