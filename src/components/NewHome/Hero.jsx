@@ -22,7 +22,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentQuoteIndex((prev) => (prev + 1) % quotes.length);
-    }, 3000);
+    }, 8000);
     return () => clearInterval(interval);
   }, []);
 
