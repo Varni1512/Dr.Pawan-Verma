@@ -13,7 +13,7 @@ export default function BookCarousel() {
       rating: 5,
       categories: ["Non-Fiction", "Leadership"],
       description:
-        "Leadership expert Dr.Pawan Verma introduces the 10X Leader – a new kind of leader who sees leadership as a way to make the world better. With a strong sense of purpose and a focus on the future, the 10X Leader uses ideas and innovation to bring real change to organizations and communities.",
+        "Leadership expert Dr. Pawan Verma introduces the 10X Leader – a new kind of leader who sees leadership as a way to make the world better. With a strong sense of purpose and a focus on the future, the 10X Leader uses ideas and innovation to bring real change to organizations and communities.",
       readMoreLink:
         "/book/the-10x-leader",
       buyLink:
@@ -149,6 +149,14 @@ export default function BookCarousel() {
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl font-bold">{currentBook.title}</h3>
               <div className="text-[#D4AF37] text-lg">{renderStars(currentBook.rating)}</div>
+            </div>
+
+            {/* Categories */}
+            <div className="mb-4">
+              <span className="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-sm">
+                <img src="/book.png" alt="book icon" className="w-4 h-4 mr-1" />
+                {currentBook.categories.join(" - ")}
+              </span>
             </div>
 
             {/* Description */}
