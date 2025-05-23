@@ -27,7 +27,10 @@ export default function Home() {
     // </div>
     <div>
       <Hero />
-      <NonFictionBookPage />
+      <section id="non-fiction">
+        <NonFictionBookPage />
+      </section>
+
       <FictionBookPage />
       <BookAtGlance />
       <BookPublished />
