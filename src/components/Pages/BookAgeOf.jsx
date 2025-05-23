@@ -1,19 +1,25 @@
- 
- 
-import { Star} from "lucide-react"
+import { Star, ArrowLeft } from "lucide-react";
 import book2 from '/singlebook01.png';
-import { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
- 
- 
+import { Link } from "react-router-dom";
+
 import Testimonials from "../Home/Testimonials";
-import Books from "../Home/Books";
 import OtherBooks from "../Pages/OtherBooks";
-import AvailableOn from "../Home/AvailableOn";
 
 const BookAgeOf = () => {
   return (
     <div className="bg-white">
+      {/* Back Button */}
+      <div className="px-4 pt-6">
+        <Link to="/#non-fiction">
+          <div
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-[#f39c12] hover:bg-[#e67e22] transition"
+            title="Go Back"
+          >
+            <ArrowLeft size={20} className="text-white" />
+          </div>
+        </Link>
+      </div>
+
       {/* Book Details Section */}
       <section className="py-12 bg-gradient-to-b from-white to-[#f5e9d1]">
         <div className="container mx-auto px-4">
@@ -29,45 +35,44 @@ const BookAgeOf = () => {
 
             {/* Book Details */}
             <div className="md:w-2/3">
-              <h1 className="text-2xl md:text-3xl font-bold text-[#1a5276] mb-2">Age of The Imperfect Leader</h1>
+              <h1 className="text-2xl md:text-3xl font-bold text-[#1a5276] mb-2">
+                Age of The Imperfect Leader
+              </h1>
               <h2>Finally, a book that demystifies the complexities of leadership success!</h2>
               <div className="flex mb-1">
                 <div className="flex gap-2 my-3">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} size={16} className={i < 4 ? "text-yellow-500 fill-yellow-500" : "text-gray-300"} />
-            ))}
-            </div>
-
-          </div>
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} className={i < 4 ? "text-yellow-500 fill-yellow-500" : "text-gray-300"} />
+                  ))}
+                </div>
+              </div>
               <p className="text-sm md:text-base mb-6 text-justify">
-              With a down-to-earth approach, leadership expert and practitioner Dr. Pawan Verma gets beyond the rhetoric associated with leadership and asserts that the secret of exceptional leadership is to be great at something rather than being good at everything. He therefore, makes the unequivocal suggestion that you should have the courage to be imperfect and the determination to make your strengths so formidable that your weaknesses become irrelevant.
-              How’s that for a change?!
-              </p>  
+                With a down-to-earth approach, leadership expert and practitioner Dr. Pawan Verma gets beyond the rhetoric associated with leadership and asserts that the secret of exceptional leadership is to be great at something rather than being good at everything...
+              </p>
               <p className="text-sm md:text-base mb-6 text-justify">
-              In a powerful narrative, enriched with stories from the lives of great leaders, this book debunks the myth of perfect leaders and unravels the key secrets of leadership success in the modern world. It is the pragmatic guide for leaders aspiring to convert their leadership challenges into a competitive advantage for themselves and for their organizations.
+                In a powerful narrative, enriched with stories from the lives of great leaders, this book debunks the myth of perfect leaders and unravels the key secrets of leadership success in the modern world...
               </p>
 
               <div className="flex space-x-4 mb-6">
-                <Link to="https://www.amazon.in/Age-Imperfect-Leader-Leading-Strength/dp/9353336449" className="bg-[rgb(243,156,18)] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300">
+                <Link
+                  to="https://www.amazon.in/Age-Imperfect-Leader-Leading-Strength/dp/9353336449"
+                  className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
+                >
                   Buy Now
                 </Link>
-               
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Available On Section */}
-      {/* <AvailableOn/> */}
-      
       {/* My Other Books Section */}
-      <OtherBooks bookTitle={"Age of the Imperfect Leader"}   />
+      <OtherBooks bookTitle={"Age of the Imperfect Leader"} />
+
       {/* Book Testimonials Section */}
-       <Testimonials/>
+      <Testimonials />
     </div>
-  )
-}
+  );
+};
 
 export default BookAgeOf;
-
