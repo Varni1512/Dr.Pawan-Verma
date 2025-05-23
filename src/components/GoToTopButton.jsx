@@ -53,7 +53,6 @@ const GoToTopButton = () => {
             : "none",
         }}
       >
-        Move to top
       </div>
       <button
         onClick={scrollToTop}
