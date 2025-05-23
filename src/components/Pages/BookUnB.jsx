@@ -1,6 +1,6 @@
  
  
-import { Star} from "lucide-react"
+import { Star, ArrowLeft } from "lucide-react";
 import book2 from '/singlebook03.jpg';
  
  
@@ -13,6 +13,17 @@ import { Link } from "react-router-dom";
 const BookUnB = () => {
   return (
     <div className="bg-white">
+      {/* Back Button */}
+      <div className="px-4 pt-6">
+        <Link to="/#non-fiction">
+          <div
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-[#f39c12] hover:bg-[#e67e22] transition"
+            title="Go Back"
+          >
+            <ArrowLeft size={20} className="text-white" />
+          </div>
+        </Link>
+      </div>
       {/* Book Details Section */}
       <section className="py-12 bg-gradient-to-b from-white to-[#f5e9d1]">
         <div className="container mx-auto px-4">
