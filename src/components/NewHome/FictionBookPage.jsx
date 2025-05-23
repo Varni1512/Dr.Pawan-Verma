@@ -143,14 +143,6 @@ export default function BookCarousel() {
               <div className="text-[#D4AF37] text-lg">{renderStars(currentBook.rating)}</div>
             </div>
 
-            {/* Categories */}
-            <div className="mb-4">
-              <span className="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-sm">
-                <img src="/book.png" alt="book icon" className="w-4 h-4 mr-1" />
-                {currentBook.categories.join(" - ")}
-              </span>
-            </div>
-
             {/* Description */}
             <p
               className="mb-6"
