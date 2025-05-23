@@ -26,7 +26,7 @@ export default function BookCarousel() {
             image: "/Fiction.png",
             rating: 5,
             categories: ["Fiction", "Crime thriller"],
-            description: `"No Closure, No Forgiveness" by Dr.Pawan Verma is a powerful book that explores emotional pain, justice, and the struggle to heal from past traumas. It looks at how people and societies deal with betrayal, grief, and unspoken wounds. Dr.Verma shares deep insights and real stories that show why closure and forgiveness are so hard — especially when the pain is never truly addressed. This thought-provoking book encourages readers to face their emotions, seek truth, and understand the cost of staying silent.`,
+            description: `"No Closure, No Forgiveness" by Dr. Pawan Verma is a powerful book that explores emotional pain, justice, and the struggle to heal from past traumas. It looks at how people and societies deal with betrayal, grief, and unspoken wounds. Dr.Verma shares deep insights and real stories that show why closure and forgiveness are so hard — especially when the pain is never truly addressed. This thought-provoking book encourages readers to face their emotions, seek truth, and understand the cost of staying silent.`,
             readMoreLink:
                 "/book/no-closure-no-forgiveness",
             buyLink:
