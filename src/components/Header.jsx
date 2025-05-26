@@ -80,7 +80,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className={`relative px-2 lg:px-3 py-2 transition duration-300 text-md lg:text-xl ${isActive ? "text-yellow-500" : "hover:text-yellow-500"
+                className={`relative px-2 lg:px-3 py-2 transition duration-300 text-md lg:text-base ${isActive ? "text-yellow-500" : "hover:text-yellow-500"
                   }`}
               >
                 {link.label}
@@ -93,7 +93,7 @@ const Header = () => {
           <div className="relative" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={toggleMoreDropdown}
-              className={`flex items-center px-2 lg:px-3 py-2 transition duration-300 text-md cursor-pointer lg:text-xl ${isMoreItemActive ? "text-yellow-500" : "hover:text-yellow-500"
+              className={`flex items-center px-2 lg:px-3 py-2 transition duration-300 text-sm cursor-pointer lg:text-base ${isMoreItemActive ? "text-yellow-500" : "hover:text-yellow-500"
                 }`}
             >
               Media kit <ChevronDown size={16} className="ml-1" />
@@ -108,7 +108,7 @@ const Header = () => {
                     <a
                       key={link.href}
                       href={link.href}
-                      className={`block px-4 py-2 transition duration-300 text-md lg:text-xl ${isActive ? "text-yellow-500" : "hover:text-yellow-500 hover:bg-gray-900"
+                      className={`block px-4 py-2 transition duration-300 ${isActive ? "text-yellow-500" : "hover:text-yellow-500 hover:bg-gray-900"
                         }`}
                     >
                       {link.label}
