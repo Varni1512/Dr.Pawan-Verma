@@ -25,6 +25,10 @@ const ProfessionalSpeaker = () => {
       <div className="flex justify-center mb-8 sm:mb-12">
         <div className="w-24 sm:w-48 h-1 bg-[#D9A61E]"></div>
       </div>
+      <p className="text-gray-600 max-w-5xl mx-auto text-base sm:text-lg font-[Inter]">
+        Dr. Pawan Verma is a keynote speaker, who has addressed number of academic conferences, corporate events and industry platforms, both in India and abroad. His rich professional background and experience makes him the ideal person to share his thoughts and experiences on topics such as leadership and management, innovation and creativity, motivation and team-building, etc.
+      </p>
+      
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Speaker Info Grid */}
