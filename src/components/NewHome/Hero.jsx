@@ -50,7 +50,7 @@ export default function Hero() {
             </h3>
 
             <p className="text-[#7B7B7B] text-sm font-['AAfacad'] md:text-base">
-              Helping organizations and leaders achieve breakthrough results through visionary leadership, impactful speaking, and strategic management consulting.
+              Helping organizations and leaders achieve breakthrough results, through visionary leadership, impactful speaking, and strategic management consulting.
             </p>
           </div>
         </div>
