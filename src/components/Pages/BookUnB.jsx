@@ -15,7 +15,7 @@ const BookUnB = () => {
     <div className="bg-white">
       {/* Back Button */}
       <div className="px-4 pt-6">
-        <Link to="/#non-fiction">
+        <Link to="/#fiction">
           <div
             className="w-10 h-10 flex items-center justify-center rounded-full bg-[#f39c12] hover:bg-[#e67e22] transition"
             title="Go Back"
@@ -76,4 +76,3 @@ const BookUnB = () => {
 }
 
 export default BookUnB;
-
