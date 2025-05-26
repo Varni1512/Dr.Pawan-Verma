@@ -72,7 +72,7 @@ export default function Hero() {
               “
             </div>
 
-            <p className="text-lg md:text-3xl italic text-[#7B7B7B] font-['Abhaya_Libre']">
+            <p className="text-md md:text-2xl italic text-[#7B7B7B] font-['Abhaya_Libre']">
               {quotes[currentQuoteIndex]}
               <span className="text-5xl md:text-6xl font-serif text-[#D4AF37] align-top leading-none ml-2">”</span>
             </p>
@@ -93,7 +93,7 @@ export default function Hero() {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row gap-4 pt-12 justify-center items-center w-full">
+          <div className="flex flex-col md:flex-row gap-4 pt-28 justify-center items-center w-full">
             <button className="border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-white font-medium py-2 px-6 rounded-md transition duration-300 text-center max-w-[250px] w-full md:w-auto">
               <a href="/about">Learn More</a>
             </button>
