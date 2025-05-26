@@ -60,7 +60,7 @@ const AboutPage = () => {
             to="/contact"
             className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300"
           >
-            Contact Us
+            Contact Now
           </Link>
 
           <a
