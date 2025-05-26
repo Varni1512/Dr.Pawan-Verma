@@ -42,12 +42,10 @@ const BookAtGlance = () => {
                     <div className="w-24 h-1 bg-[#D9A61E]"></div>
                 </div>
                 <p className="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg font-[Inter]">
-                    Discover our curated collection of insightful books that will transform your perspective
-                    on leadership, personal growth, and professional development.
+                    Discover a curated collection of insightful books that will transform your perspective on leadership, personal growth and professional development, in addition to giving you some thrill and excitement.
                 </p>
             </div>
 
-            {/* Horizontal Scroll on Mobile, Grid on Desktop */}
             {/* Horizontal Scroll on Mobile, Grid on Desktop */}
             <div className="overflow-x-auto scrollbar-hide md:overflow-visible">
                 <div className="flex flex-col md:grid md:grid-cols-4 gap-8 justify-items-center pb-4">
