@@ -57,7 +57,7 @@ export default function BookCarousel() {
     };
 
     return (
-    <div className="max-w-6xl mx-auto p-4 relative">
+    <div id='fiction'className="max-w-6xl mx-auto p-4 relative">
       <div className="w-52 h-1 bg-[#D9A61E] mx-auto mb-6"></div>
 
       {/* Book Showcase Container with category inside */}
