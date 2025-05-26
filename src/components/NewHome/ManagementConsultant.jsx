@@ -29,9 +29,12 @@ const ManagementConsultant = () => {
             <div className="flex justify-center mb-8 sm:mb-12">
                 <div className="w-24 sm:w-48 h-1 bg-[#D9A61E]"></div>
             </div>
-
+            <p className="text-gray-600 max-w-5xl mx-auto text-base sm:text-lg font-[Inter]">
+                Dr. Pawan Verma is an independent Management Consultant and Trainer, and is associated with a number of national and international platforms in the consulting space. He has done both on-site & off-site consulting for Indian and a few select Asian markets on a range of issues, including insurance regulations, organization-restructuring & development, market entry & expansion strategies, global business strategies & dimensions, marketing Strategies & future outlook, etc
+            </p>
+            
             {/* Consulting Services Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-9 pt-12">
                 {consultingServices.map((service) => (
                     <div key={service.id} className="overflow-hidden bg-gray-50 shadow-lg  rounded-2xl">
                         <div className="relative h-40 ">
