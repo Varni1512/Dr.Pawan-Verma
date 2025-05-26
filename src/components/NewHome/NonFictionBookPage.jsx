@@ -13,7 +13,7 @@ export default function BookCarousel() {
       rating: 5,
       categories: ["Non-Fiction", "Leadership"],
       description:
-        "Leadership expert Dr. Pawan Verma introduces the 10X Leader – a new kind of leader who sees leadership as a way to make the world better. With a strong sense of purpose and a focus on the future, the 10X Leader uses ideas and innovation to bring real change to organizations and communities.",
+        "Dear leader, the world around you has changed. Have you? – a new kind of leader who sees leadership as a way to make the world better. With a strong sense of purpose and a focus on the future, the 10X Leader uses ideas and innovation to bring real change to organizations and communities.",
       readMoreLink:
         "/book/the-10x-leader",
       buyLink:
