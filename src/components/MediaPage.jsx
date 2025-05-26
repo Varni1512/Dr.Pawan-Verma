@@ -313,7 +313,7 @@ const MediaPage = () => {
                 onClick={() => navigate("/contact")}
                 className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
               >
-                Contact Us
+                Contact Now
               </button>
             </div>
           </div>
