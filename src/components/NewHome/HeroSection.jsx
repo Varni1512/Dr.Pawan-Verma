@@ -9,9 +9,7 @@ const HeroSection = () => {
             Ready to Transform Your Organization?
           </h2>
           <p className="text-gray-600 mb-6 text-sm sm:text-base leading-relaxed" style={{ fontFamily: "Inter, sans-serif", color: "#7B7B7B" }}>
-            With experience serving on boards and leading initiatives in organizations like Reliance
-            Group and LIC of India, Dr. Verma brings a wealth of practical knowledge to help your
-            organization thrive.
+            With experience of serving on boards and expertise in leading business initiatives in both start-ups and large organizations, such as, the Reliance Group, LIC of India and Star Union Dai-ich Life Insurance, Dr. Verma brings forth a wealth of practical knowledge and insights to help your organization re-discover its potential and realize its dreams.
           </p>
           <button className="bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors w-full sm:w-auto cursor-pointer">
             <a href="/contact">Contact Us</a>
