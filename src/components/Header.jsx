@@ -48,7 +48,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black text-white ">
+    <header className="bg-black text-white text-20px ">
       <div className="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
         {/* Logo - Adjusted for better responsiveness */}
         <Link to='/' className="flex items-center mr-4">
