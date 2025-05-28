@@ -17,7 +17,7 @@ export default function BookCarousel() {
       readMoreLink:
         "/book/the-10x-leader",
       buyLink:
-        "https://www.amazon.in/10X-Leader-Breaking-Conventional-Leadership-ebook/dp/B0D9H7QZ2G",
+        "https://www.amazon.in/10X-Leader-Breaking-Conventional-Leadership/dp/8119792637/ref=tmm_pap_swatch_0",
     },
     {
       id: 2,
