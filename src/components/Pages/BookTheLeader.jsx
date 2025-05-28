@@ -62,7 +62,7 @@ const BookTheLeader = () => {
 
               <div className="flex space-x-4 mb-6">
                 <Link
-                  to="https://www.amazon.in/10X-Leader-Breaking-Conventional-Leadership-ebook/dp/B0D9H7QZ2G"
+                  to="https://www.amazon.in/10X-Leader-Breaking-Conventional-Leadership/dp/8119792637/ref=tmm_pap_swatch_0"
                   className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
                 >
                   Buy Now
