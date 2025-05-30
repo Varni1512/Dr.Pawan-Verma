@@ -52,12 +52,17 @@ const BookTheLeader = () => {
                 </div>
               </div>
               <p className="text-sm md:text-base text-justify mb-6">
-                the 10X leader—the one who looks at leadership as a responsibility to make the
-                world a better place to live...
+                DEAR LEADER, THE WORLD AROUND YOU HAS CHANGED.HAVE YOU?
+                Leadership expert Dr. Pawan Verma introduces the concept of the 10X leader,a new kind of leader who takes responsibility for making the world a better place. These leaders think big, act with purpose, and use innovative ideas and strong networks to drive positive change in business, society, and everyday life.
               </p>
               <p className="text-sm md:text-base text-justify mb-6">
-                This book is carefully designed to help contemporary leaders get rid of the
-                Industrial Age mindset and cultivate new beliefs...
+                In his book, Dr. Verma shares a powerful new leadership model called AGILE, which stands for Alive and Adaptive, Grit, Innovation, Learning, and Excellence. This AGILE approach helps leaders handle the fast-changing, unpredictable, and complex world where we live and often described as the VUCA world i.e (Volatile, Uncertain, Complex & Ambiguous).
+              </p>
+              <p className="text-sm md:text-base text-justify mb-6">
+                The book also promotes a Whole Brain Leadership mindset, encouraging leaders to use both creative (right-brain) and logical (left-brain) thinking to solve problems and lead effectively. Dr. Verma urges leaders to break free from outdated Industrial Age thinking and adopt modern, future-ready habits and beliefs. This inspiring and practical guide is designed to transform not just leaders but also the people and communities they influence.
+              </p>
+              <p className="text-sm md:text-base text-justify mb-6">
+                Dr. Verma’s key message is simple,"Don’t just think outside the box—get rid of the box altogether.”
               </p>
 
               <div className="flex space-x-4 mb-6">
