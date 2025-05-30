@@ -13,7 +13,7 @@ export default function BookCarousel() {
       rating: 5,
       categories: ["Non-Fiction", "Leadership"],
       description:
-        "Dear leader, the world around you has changed. Have you? – a new kind of leader who sees leadership as a way to make the world better. With a strong sense of purpose and a focus on the future, the 10X Leader uses ideas and innovation to bring real change to organizations and communities.",
+        "DEAR LEADER, THE WORLD AROUND YOU HAS CHANGED.HAVE YOU? Leadership expert Dr. Pawan Verma introduces the concept of the 10X leader,a new kind of leader who takes responsibility for making the world a better place. These leaders think big, act with purpose, and use innovative ideas and strong networks to drive positive change in business, society, and everyday life.",
       readMoreLink:
         "/book/the-10x-leader",
       buyLink:
