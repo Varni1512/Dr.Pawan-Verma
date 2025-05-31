@@ -52,7 +52,7 @@ const BookTheLeader = () => {
                 </div>
               </div>
               <p className="text-sm md:text-base text-justify mb-6">
-                DEAR LEADER, THE WORLD AROUND YOU HAS CHANGED.HAVE YOU?
+                DEAR LEADER, THE WORLD AROUND YOU HAS CHANGED. HAVE YOU?<br />
                 Leadership expert Dr. Pawan Verma introduces the concept of the 10X leader,a new kind of leader who takes responsibility for making the world a better place. These leaders think big, act with purpose, and use innovative ideas and strong networks to drive positive change in business, society, and everyday life.
               </p>
               <p className="text-sm md:text-base text-justify mb-6">
