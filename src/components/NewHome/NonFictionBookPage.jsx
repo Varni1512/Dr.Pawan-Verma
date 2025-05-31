@@ -13,7 +13,7 @@ export default function BookCarousel() {
       rating: 5,
       categories: ["Non-Fiction", "Leadership"],
       description:
-        "DEAR LEADER, THE WORLD AROUND YOU HAS CHANGED.HAVE YOU? Leadership expert Dr. Pawan Verma introduces the concept of the 10X leader,a new kind of leader who takes responsibility for making the world a better place. These leaders think big, act with purpose, and use innovative ideas and strong networks to drive positive change in business, society, and everyday life.",
+        "DEAR LEADER, THE WORLD AROUND YOU HAS CHANGED. HAVE YOU?\n Leadership expert Dr. Pawan Verma introduces the concept of the 10X leader,a new kind of leader who takes responsibility for making the world a better place. These leaders think big, act with purpose, and use innovative ideas and strong networks to drive positive change in business, society, and everyday life.",
       readMoreLink:
         "/book/the-10x-leader",
       buyLink:
@@ -154,7 +154,7 @@ export default function BookCarousel() {
             {/* Description */}
             <p
               className="mb-6"
-              style={{ fontFamily: "Inter, sans-serif", color: "#7B7B7B" }}
+              style={{ fontFamily: "Inter, sans-serif", color: "#7B7B7B" , whiteSpace: 'pre-line' }}
             >
               {currentBook.description}
             </p>
