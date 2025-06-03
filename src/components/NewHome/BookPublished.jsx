@@ -47,12 +47,30 @@ const BookPublished = () => {
             title: 'No Closure No Forgiveness',
             subtitle: '',
             author: '',
+            image: 'https://pawanverma.in/wp-content/uploads/2020/09/Book-Cover5-200x300.jpg',
+            category: 'Romance',
+            buyLink: 'https://www.amazon.in/gp/product/B01GQQDMQA/'
+        },
+        {
+            id: 10,
+            title: 'No Closure No Forgiveness',
+            subtitle: '',
+            author: '',
+            image: 'https://pawanverma.in/wp-content/uploads/2020/09/Book-Cover6.jpg',
+            category: 'Romance',
+            buyLink: 'https://www.amazon.in/gp/product/B01H4PSGX6/'
+        },
+        {
+            id: 11,
+            title: 'No Closure No Forgiveness',
+            subtitle: '',
+            author: '',
             image: '/book7.png',
             category: 'Romance',
             buyLink: 'https://www.amazon.in/gp/product/B01FKLOI88/'
         },
         {
-            id: 10,
+            id: 12,
             title: 'No Closure No Forgiveness',
             subtitle: '',
             author: '',
@@ -61,7 +79,7 @@ const BookPublished = () => {
             buyLink: 'https://www.amazon.in/gp/product/B01F5D5O2A/'
         },
         {
-            id: 11,
+            id: 13,
             title: 'No Closure No Forgiveness',
             subtitle: '',
             author: '',
@@ -70,7 +88,7 @@ const BookPublished = () => {
             buyLink: 'https://www.amazon.in/gp/product/B01FH3IR8Q/'
         },
         {
-            id: 12,
+            id: 14,
             title: 'No Closure No Forgiveness',
             subtitle: '',
             author: '',
@@ -79,7 +97,7 @@ const BookPublished = () => {
             buyLink: 'https://www.amazon.com/Billionaires-Obsession-Love-Too-Close-ebook/dp/B01E604U1O'
         },
         {
-            id: 13,
+            id: 15,
             title: 'No Closure No Forgiveness',
             subtitle: '',
             author: '',
@@ -88,7 +106,7 @@ const BookPublished = () => {
             buyLink: 'https://www.amazon.in/gp/product/B01EG9B7M0/'
         },
         {
-            id: 14,
+            id: 16,
             title: 'No Closure No Forgiveness',
             subtitle: '',
             author: '',
@@ -97,7 +115,7 @@ const BookPublished = () => {
             buyLink: 'https://www.amazon.in/gp/product/B01G26424U/'
         },
         {
-            id: 14,
+            id: 17,
             title: 'Unbroken',
             subtitle: '',
             author: 'Pawan Verma',
