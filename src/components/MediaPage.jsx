@@ -1,5 +1,5 @@
 "use client"
-
+import { Link } from 'react-router-dom'
 import { useState, useRef } from "react"
 import { Calendar, ExternalLink, Filter, Newspaper, Play, Radio, Share2, Video, X } from "lucide-react"
 
@@ -309,12 +309,12 @@ const MediaPage = () => {
             <br />
             <br />
             <div className="text-center">
-              <button
-                onClick={() => navigate("/contact")}
+              <Link
+                to="/contact"
                 className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
               >
                 Contact Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>
