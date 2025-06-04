@@ -4,18 +4,43 @@ const ProfessionalSpeaker = () => {
   const speakerInfo = [
     {
       id: 1,
-      title: 'An expert is typically an individual whose knowledge and experience are deeply rooted within a specific industry or field.',
-      image: '/Professional1.png'
+      title: 'Addressing Masterclass on Indian Insurance Sector',
+      image: '/speaker/7.jpg'
     },
     {
       id: 2,
-      title: 'The core task of a professional speaker is to deliver speeches or presentations at various events, such as conferences, seminars, corporate meetings, or special occasions.',
-      image: '/Professional2.png'
+      title: 'Addressing the REX Conclive 2014 for a Social Cause',
+      image: '/speaker/8.jpg'
     },
     {
       id: 3,
-      title: 'Professional speakers are skilled at engaging audiences and delivering impactful presentations.',
-      image: '/Professional3.png'
+      title: 'At India Authors Award 2021',
+      image: '/speaker/9.jpg'
+    },
+    {
+      id: 4,
+      title: 'Creating New Markets - ETFs Asia Conference Hong Kong',
+      image: '/speaker/10.jpg'
+    },
+    {
+      id: 5,
+      title: 'Masterclass on Indian Insurance Sector',
+      image: '/speaker/11.jpg'
+    },
+    {
+      id: 6,
+      title: 'Panel Discussion at SME CEO Session',
+      image: '/speaker/12.jpg'
+    },
+    {
+      id: 7,
+      title: 'Service with a Smile - SOA University Conferenced Plenary Session',
+      image: '/speaker/13.jpg'
+    },
+    {
+      id: 8,
+      title: 'Technology for Humanity - Financial Services Technology Seminar at Hong Kong',
+      image: '/speaker/14.jpg'
     }
   ];
 
@@ -25,24 +50,26 @@ const ProfessionalSpeaker = () => {
       <div className="flex justify-center mb-8 sm:mb-12">
         <div className="w-24 sm:w-48 h-1 bg-[#D9A61E]"></div>
       </div>
-      <p className="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg font-[Inter] text-center">
-        Dr. Pawan Verma is a keynote speaker, who has addressed number of academic conferences, corporate events and industry platforms, both in India and abroad. His rich professional background and experience makes him the ideal person to share his thoughts and experiences on topics such as leadership and management, innovation and creativity, motivation and team-building, etc.
+      <p className="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg font-[Inter] text-center px-4">
+       Dr. Pawan Verma is a keynote speaker, who has addressed number of academic conferences, corporate events and industry platforms, both in India and abroad. His rich professional background and experience makes him the ideal person to share his thoughts and experiences on topics such as leadership and management, innovation and creativity, motivation and team-building, etc.
       </p>
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-        {/* Speaker Info Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
-          {speakerInfo.map((item) => (
-            <div key={item.id} className="rounded-2xl overflow-hidden shadow-lg bg-gray-50">
-              <div className="relative h-64">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
+          {speakerInfo.map(item => (
+            <div
+              key={item.id}
+              className="rounded-2xl overflow-hidden shadow-lg bg-gray-50"
+            >
+              <div className="relative h-64 overflow-hidden">
                 <img
                   src={item.image}
                   alt={`Professional Speaker ${item.id}`}
-                  className="w-[415px] h-[279px] object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="p-6">
-                <p className="text-gray-800 font-medium pt-4">{item.title}</p>
+                <p className="text-gray-800 font-medium pt-4 leading-relaxed">{item.title}</p>
               </div>
             </div>
           ))}
