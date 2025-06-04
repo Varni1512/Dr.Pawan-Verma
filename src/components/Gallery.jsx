@@ -55,6 +55,60 @@ const GalleryPage = () => {
     {
       id: 4,
       category: "awards",
+      title: "Receiving Hon Doctorate",
+      description: "",
+      image:'/gallery/Celebrating with Team - Rotary Trophy & Awards.jpeg',
+      alt: "Leadership Excellence Award 2024 certificate",
+      year: "2024",
+    },
+    {
+      id: 5,
+      category: "awards",
+      title: " ISTD Book Award 2019",
+      description: "",
+      image:'/gallery/Receiving ISTD Book Award 2019.jpg',
+      alt: "Leadership Excellence Award 2024 certificate",
+      year: "2019",
+    },
+    {
+      id: 6,
+      category: "awards",
+      title: "Best Leadership Author Trophy 2024",
+      description: "",
+      image:'/gallery/Best Leadership Author Trophy 2024.jpg',
+      alt: "Leadership Excellence Award 2024 certificate",
+      year: "2024",
+    },
+    {
+      id: 7,
+      category: "awards",
+      title: "Receiving REX Award",
+      description: "Certificate recognizing Dr. Verma as a Pioneer in Transformative Leadership and Strategic Thought",
+      image:'/gallery/Receiving REX Global Fellowship & Award 2014.jpg',
+      alt: "Leadership Excellence Award 2024 certificate",
+      year: "2024",
+    },
+    {
+      id: 8,
+      category: "awards",
+      title: "Receiving the Rotary Trophy",
+      description: "",
+      image:'/gallery/Receiving the Rotary Trophy.jpg',
+      alt: "Leadership Excellence Award 2024 certificate",
+      year: "2024",
+    },
+    {
+      id: 9,
+      category: "awards",
+      title: "Leadership Excellence Award 2024",
+      description: "Certificate recognizing Dr. Verma as a Pioneer in Transformative Leadership and Strategic Thought",
+      image:'/gallery/LEA Award 2024.jpg',
+      alt: "Leadership Excellence Award 2024 certificate",
+      year: "2024",
+    },
+    {
+      id: 10,
+      category: "awards",
       title: "Sahityakosh Samman Medal",
       description: "Gold medal awarded to Dr. Verma for literary excellence",
       image:'/gallery/Sahityakosh Samman 2022 - Medal.jpeg',
@@ -62,7 +116,7 @@ const GalleryPage = () => {
       year: "2022",
     },
     {
-      id: 5,
+      id: 11,
       category: "awards",
       title: "Rotary Star Polaris Trophy",
       description: "Award presented to Dr. Verma as President of Rotary Club of Millennium City Navi Mumbai",
@@ -71,7 +125,7 @@ const GalleryPage = () => {
       year: "2018",
     },
     {
-      id: 6,
+      id: 12,
       category: "awards",
       title: "Rotary International Citation - Making a Difference",
       description: "Awarded for helping Rotary make a different in the lives of peoples all over the worlds.",
@@ -80,7 +134,7 @@ const GalleryPage = () => {
       year: "2018",
     },
     {
-      id: 7,
+      id: 13,
       category: "awards",
       title: "Sahityakosh Awardee",
       description: "Sahityakosh Awardee awarded to Dr. Verma for literary excellence",
@@ -89,7 +143,7 @@ const GalleryPage = () => {
       year: "2022",
     },
     {
-      id: 8,
+      id: 14,
       category: "awards",
       title: "Leadership Excellence Award Trophy 2024",
       description: "Certificate recognizing Dr. Verma as a Pioneer in Transformative Leadership and Strategic Thought",
@@ -98,7 +152,7 @@ const GalleryPage = () => {
       year: "2024",
     },
     {
-      id: 9,
+      id: 15,
       category: "books",
       title: "New Arrivals at Rupa Publications",
       description: "Dr. Verma's book 'Age of the Imperfect Leader' featured among new releases",
@@ -108,7 +162,7 @@ const GalleryPage = () => {
       year: "2022",
     },
     {
-      id: 10,
+      id: 16,
       category: "books",
       title: "The 10X Leader - Advance Praise",
       description: "Endorsements from business leaders for Dr. Verma's book 'The 10X Leader'",
@@ -117,7 +171,7 @@ const GalleryPage = () => {
       year: "2023",
     },
     {
-      id: 11,
+      id: 17,
       category: "events",
       title: "Pune International Literary Festival",
       description: "Dr. Verma speaking at the 12th Pune International Literary Festival panel discussion",
@@ -128,7 +182,7 @@ const GalleryPage = () => {
     },
   
     {
-      id: 12,
+      id: 18,
       category: "events",
       title: "Receiving the Rotary Star Platinum Trophy",
       description: "Award presented to Dr. Verma as President of Rotary Club of Millennium City Navi Mumbai",
@@ -137,7 +191,7 @@ const GalleryPage = () => {
       year: "2018",
     },
     {
-      id: 13,
+      id: 19,
       category: "events",
       title: "Book Signing Event",
       description: "Dr. Verma with a reader holding his book 'Age of the Imperfect Leader'",
@@ -146,7 +200,7 @@ const GalleryPage = () => {
       year: "2023",
     },
     {
-      id: 14,
+      id: 20,
       category: "personal",
       title: "With Wife Neelima",
       description: "Dr. Pawan Verma with his wife Neelima during a personal occasion",
@@ -155,7 +209,7 @@ const GalleryPage = () => {
       year: "2021",
     },
     {
-      id: 15,
+      id: 21,
       category: "events",
       title: "Receiving the Rotary Star Platinum Trophy",
       description: "Award presented to Dr. Verma as President of Rotary Club of Millennium City Navi Mumbai",
@@ -391,4 +445,3 @@ const GalleryPage = () => {
 }
 
 export default GalleryPage
-
