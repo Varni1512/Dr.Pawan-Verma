@@ -78,7 +78,7 @@ function Contactus() {
                     type="text"
                     id="name"
                     required
-                    className="mt-1 block w-full px-4 py-1 border border-gray-300 rounded-sm shadow-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                    className="mt-1 block w-full px-4 py-1 border border-gray-300 rounded-sm shadow-sm "
                   />
                 </div>
 
@@ -90,7 +90,7 @@ function Contactus() {
                     type="email"
                     id="email"
                     required
-                    className="mt-1 block w-full px-4 py-1 border border-gray-300 rounded-sm   shadow-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                    className="mt-1 block w-full px-4 py-1 border border-gray-300 rounded-sm   shadow-sm "
                   />
                 </div>
 
@@ -102,7 +102,7 @@ function Contactus() {
                     type="text"
                     id="subject"
                     required
-                    className="mt-1 block w-full px-4 py-1 border border-gray-300 rounded-sm shadow-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                    className="mt-1 block w-full px-4 py-1 border border-gray-300 rounded-sm shadow-sm "
                   />
                 </div>
 
@@ -114,7 +114,7 @@ function Contactus() {
                     id="message"
                     rows={6}
                     required
-                    className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                    className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm"
                   ></textarea>
                 </div>
 
