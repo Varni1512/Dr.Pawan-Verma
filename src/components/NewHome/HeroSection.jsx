@@ -17,7 +17,7 @@ const HeroSection = () => {
         </div>
         <div className="w-full md:w-auto flex justify-center">
           <img
-            src="/meet.png"
+            src="/meet.JPG"
             alt="Business meeting"
             className="rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-cover"
           />
