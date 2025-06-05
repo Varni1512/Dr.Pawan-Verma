@@ -5,7 +5,7 @@ const AwardsSection = () => {
   const awards = [
     {
       id: 1,
-      title: "Receiving Hon Doctorate",
+      title: "Receiving Hon Doctorate from Azteca University Mexico",
       icon: (
         <img
           src="/1.jpg"
