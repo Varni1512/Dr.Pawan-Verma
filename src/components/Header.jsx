@@ -8,39 +8,29 @@ const Header = () => {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
   const location = useLocation();
 
-  // Check if the "Books" menu should be active
   const isBooksActive = location.pathname.startsWith("/book");
-
-  // Check if any of the items in the More dropdown are active
   const isMoreItemActive = ["/media", "/gallery"].includes(location.pathname);
 
-  // Main navigation items
   const mainNavItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    // { label: "Books", href: "/book/the-10x-leader" },
     { label: "Speaking", href: "/speaking" },
     { label: "Consulting", href: "/consulting" },
-    { label: "Contact", href: "/contact"},
-    // { label: "Publishing", href: "/publishing" },
+    { label: "Contact", href: "/contact" },
   ];
 
-  // More dropdown items
   const moreNavItems = [
     { label: "Media", href: "/media" },
     { label: "Blogs", href: "/blogs" },
     { label: "Gallery", href: "/gallery" },
   ];
 
-  // All items for mobile view
   const allNavItems = [...mainNavItems, ...moreNavItems];
 
-  // Toggle the more dropdown
   const toggleMoreDropdown = () => {
     setIsMoreOpen(!isMoreOpen);
   };
 
-  // Close the more dropdown when clicking outside
   const handleClickOutside = () => {
     if (isMoreOpen) {
       setIsMoreOpen(false);
@@ -48,9 +38,9 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black text-white text-20px ">
+    <header className="bg-black text-white text-lg">
       <div className="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
-        {/* Logo - Adjusted for better responsiveness */}
+        {/* Logo */}
         <Link to='/' className="flex items-center mr-4">
           <div className="h-16 md:h-20 w-auto">
             <img
@@ -65,14 +55,14 @@ const Header = () => {
           </div>
         </Link>
 
-        {/* Mobile menu button */}
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Desktop Navigation - Better responsiveness */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-2 lg:space-x-4 flex-grow justify-end">
           {mainNavItems.map((link) => {
             const isActive = location.pathname === link.href || (link.label === "Books" && isBooksActive);
@@ -80,8 +70,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className={`relative px-2 lg:px-3 py-2 transition duration-300 text-md lg:text-base ${isActive ? "text-yellow-500" : "hover:text-yellow-500"
-                  }`}
+                className={`relative px-2 lg:px-3 py-2 transition duration-300 text-lg ${isActive ? "text-yellow-500" : "hover:text-yellow-500"}`}
               >
                 {link.label}
                 {isActive && <div className="absolute bottom-0 left-0 w-full h-1 bg-yellow-500"></div>}
@@ -89,12 +78,11 @@ const Header = () => {
             );
           })}
 
-          {/* More dropdown */}
+          {/* More Dropdown */}
           <div className="relative" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={toggleMoreDropdown}
-              className={`flex items-center px-2 lg:px-3 py-2 transition duration-300 text-sm cursor-pointer lg:text-base ${isMoreItemActive ? "text-yellow-500" : "hover:text-yellow-500"
-                }`}
+              className={`flex items-center px-2 lg:px-3 py-2 transition duration-300 text-lg cursor-pointer ${isMoreItemActive ? "text-yellow-500" : "hover:text-yellow-500"}`}
             >
               Media kit <ChevronDown size={16} className="ml-1" />
               {isMoreItemActive && <div className="absolute bottom-0 left-0 w-full h-1 bg-yellow-500"></div>}
@@ -108,8 +96,7 @@ const Header = () => {
                     <a
                       key={link.href}
                       href={link.href}
-                      className={`block px-4 py-2 transition duration-300 ${isActive ? "text-yellow-500" : "hover:text-yellow-500 hover:bg-gray-900"
-                        }`}
+                      className={`block px-4 py-2 transition duration-300 text-base ${isActive ? "text-yellow-500" : "hover:text-yellow-500 hover:bg-gray-900"}`}
                     >
                       {link.label}
                     </a>
@@ -130,18 +117,19 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className={`relative block px-4 py-2 transition duration-300 ${isActive ? "text-yellow-500" : "hover:text-yellow-500"
-                  }`}
+                className={`relative block px-4 py-2 transition duration-300 text-lg ${isActive ? "text-yellow-500" : "hover:text-yellow-500"}`}
               >
                 {link.label}
-                {isActive && <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1 bg-yellow-500"></div>}
+                {isActive && (
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1 bg-yellow-500"></div>
+                )}
               </a>
             );
           })}
         </nav>
       )}
 
-      {/* Click outside handler */}
+      {/* Outside Click Handler for Dropdown */}
       {isMoreOpen && (
         <div
           className="fixed inset-0 z-0"
