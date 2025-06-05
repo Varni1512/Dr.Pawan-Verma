@@ -36,6 +36,16 @@ const EventsAndActivities = () => {
       id: 7,
       title: 'Speaking at the Book Launch',
       image: '/event/7.JPG'
+    },
+    {
+      id: 8,
+      title: 'Receiving the Rotary Star Platinum Trophy',
+      image: '/event/8.jpg'
+    },
+    {
+      id: 9,
+      title: 'Receiving the Rotary Trophy',
+      image: '/event/9.jpg'
     }
   ];
 
@@ -53,7 +63,7 @@ const EventsAndActivities = () => {
               key={item.id}
               className="rounded-2xl overflow-hidden shadow-lg bg-gray-50"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-68 overflow-hidden">
                 <img
                   src={item.image}
                   alt={`Professional Speaker ${item.id}`}
