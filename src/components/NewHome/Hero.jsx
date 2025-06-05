@@ -75,7 +75,7 @@ export default function Hero() {
 
             <p className="text-md md:text-2xl italic text-[#7B7B7B] font-['Abhaya_Libre']">
               {quotes[currentQuoteIndex]}
-              <span className="text-5xl md:text-6xl font-serif text-[#D4AF37] align-top leading-none ml-2">”</span>
+              <span className="text-5xl md:text-6xl font-serif text-[#D4AF37] align-top leading-none ml-0">”</span>
             </p>
 
           </div>
