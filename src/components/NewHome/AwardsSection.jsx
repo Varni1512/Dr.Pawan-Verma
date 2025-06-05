@@ -8,7 +8,7 @@ const AwardsSection = () => {
       title: "Receiving Hon Doctorate",
       icon: (
         <img
-          src="/1.jpeg"
+          src="/1.jpg"
           alt="Leadership Award Icon"
           className="w-full h-88 sm:h-96 object-cover rounded-lg"
         />
@@ -19,7 +19,7 @@ const AwardsSection = () => {
       title: "Best Leadership author 2024 Trophy and Certificate",
       icon: (
         <img
-          src="/2.jpg"
+          src="/2.jpeg"
           alt="Best Business Author Icon"
           className="w-full h-88 sm:h-96 object-cover rounded-lg"
         />
