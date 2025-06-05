@@ -34,7 +34,7 @@ const ProfessionalSpeaker = () => {
     },
     {
       id: 7,
-      title: 'Service with a Smile - SOA University Conferenced Plenary Session',
+      title: 'Service with a Smile - SOA University Conference Plenary Session',
       image: '/speaker/13.jpg'
     },
     {
