@@ -62,8 +62,9 @@ export default function Hero() {
           </h2>
 
           <div
-            className="relative mb-6 w-full max-w-2xl pt-12 px-2 md:px-4 h-[180px] md:h-[200px] mx-auto"
+            className="relative mb-6 w-full max-w-2xl pt-12 px-2 md:px-4 min-h-[240px] md:min-h-[260px] mx-auto"
           >
+
 
             <div
               className="absolute top-12 left-1 text-5xl md:text-6xl font-serif text-[#D4AF37] select-none -translate-x-3 -translate-y-3 md:left-0"
@@ -80,7 +81,8 @@ export default function Hero() {
           </div>
 
           {/* Dots */}
-          <div className="flex gap-3 justify-center mb-8 w-full">
+          <div className="flex gap-3 justify-center mt-4 mb-8 w-full">
+
             {quotes.map((_, i) => (
               <button
                 key={i}
