@@ -40,7 +40,7 @@ const BookUnB = () => {
             {/* Book Details */}
             <div className="md:w-2/3">
               <h1 className="text-2xl md:text-3xl font-bold text-[#1a5276] mb-2">UNBROKEN</h1>
-              <h2>Unbroken : Courage. Resilience. Hope. Faith</h2>
+              <h2>UNBROKEN: A Heart-Pounding Spy Thriller You Won’t Be Able to Put Down</h2>
               <div className="flex mb-1">
                 <div className="flex gap-2 my-3">
             {[...Array(5)].map((_, i) => (
@@ -50,8 +50,23 @@ const BookUnB = () => {
 
           </div>
               <p className="text-sm md:text-base text-justify mb-6">
-              An Edge-of-the-Seat Thriller. While Roma Anand is celebrating the success of her painting exhibition in Macau, little does she realize what the night has in store for her. By a sheer coincidence, she gets trapped in a fierce battle between two dreaded intelligence agencies - R&AW and ISI - for possession of a vital defence asset. She is able to escape, but not before she has become witness to two murders and has her finger prints on one of the murder weapons.A Cat-and-Mouse Game Roma is chased down endlessly as she has unwittingly snatched the contentious asset from the two rivals, even though she herself is not aware of it. Left alone in the world, she runs like a scared rabbit, but her predators ferret her out of her hideouts. Tired of running, she decides to take on her enemies and deliver justice on them. What follows is a cat-and-mouse game, a fierce battle between a wife, seeking revenge for the murder of her husband and a bunch of professional assassins who know no mercy. Will Roma be able to deliver justice on her predators?Download your copy today!Take action right away and Click the Orange "Buy now with 1-Click" Button.Tags: Thriller, Mystery, murder, Suspense, Crime, Revenge, Love, Romance, Passion, Retribution, detective books, best sellers fiction, crime fiction novels, crime thrillers, best mystery novel, murder mysteries in kindle books, new releases in mystery thriller novels, kindle crime novels, new books
+              Roma Anand’s painting exhibition in Macau is a dream come true—until everything goes horribly wrong. By sheer bad luck, she stumbles into a deadly battle between two secret intelligence agencies: India’s R&AW and Pakistan’s ISI. At the center of it all? A top-secret defence software stolen by the enemy.
+              </p> 
+              <p className="text-sm md:text-base text-justify mb-6">
+              Before she knows it, Roma’s life is turned upside down. She witnesses two brutal murders and somehow ends up with her fingerprints on one of the murder weapons. Now, both sides are hunting her—and she doesn’t even know why.
+              </p> 
+              <p className="text-sm md:text-base text-justify mb-6">
+              Running for her life, Roma feels like a scared rabbit being chased by ruthless predators who won’t stop until she’s caught. But tired of running, she decides it’s time to fight back.
+              </p> 
+              <p className="text-sm md:text-base text-justify mb-6">
+              What follows is a gripping cat-and-mouse game filled with danger, twists, and one woman’s fierce quest for justice—fueled by the loss of her husband and a burning desire to take down her enemies.
+              </p> 
+              <p className="text-sm md:text-base text-justify mb-6">
+              Will Roma outsmart the assassins closing in?<br />Can she turn the tables and finally get the justice she deserves?
               </p>  
+              <p className="text-sm md:text-base text-justify mb-6">
+                If you love thrillers packed with suspense, action, and a strong, fearless heroine, UNBROKEN will keep you hooked until the very last page.
+              </p>
             
               <div className="flex space-x-4 mb-6">
                 <Link to="https://www.amazon.in/Unbroken-Pawan-Verma/dp/B09MWGHDZQ" className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300">
@@ -76,3 +91,4 @@ const BookUnB = () => {
 }
 
 export default BookUnB;
+
