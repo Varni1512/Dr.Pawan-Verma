@@ -37,9 +37,9 @@ const BookTheLeader = () => {
             {/* Book Details */}
             <div className="md:w-2/3">
               <h1 className="text-2xl md:text-3xl font-bold text-[#1a5276] mb-2">
-                The 10X Leader
+                The 10X Leader: Are You Ready to Lead in a Changed World?
               </h1>
-              <h2>Finally, a book that demystifies the complexities of leadership success!</h2>
+              <h2>The 10X Leader: Are You Ready to Lead in a Changed World?</h2>
               <div className="flex mb-1">
                 <div className="flex gap-2 my-3">
                   {[...Array(5)].map((_, i) => (
@@ -52,17 +52,25 @@ const BookTheLeader = () => {
                 </div>
               </div>
               <p className="text-sm md:text-base text-justify mb-6">
-                DEAR LEADER, THE WORLD AROUND YOU HAS CHANGED. HAVE YOU?<br />
-                Leadership expert Dr. Pawan Verma introduces the concept of the 10X leader,a new kind of leader who takes responsibility for making the world a better place. These leaders think big, act with purpose, and use innovative ideas and strong networks to drive positive change in business, society, and everyday life.
+                Dear Leader, the world has changed. Have you evolved with it?<br />
+                In The 10X Leader, renowned leadership expert Dr. Pawan Verma redefines what it means to lead in today’s fast-paced, unpredictable, and interconnected world. This is not just another leadership book—it’s a powerful call to action for those who want to make a meaningful difference.
               </p>
               <p className="text-sm md:text-base text-justify mb-6">
-                In his book, Dr. Verma shares a powerful new leadership model called AGILE, which stands for Alive and Adaptive, Grit, Innovation, Learning, and Excellence. This AGILE approach helps leaders handle the fast-changing, unpredictable, and complex world where we live and often described as the VUCA world i.e (Volatile, Uncertain, Complex & Ambiguous).
+                Dr. Verma introduces the concept of the 10X Leader a leader driven by purpose, powered by innovation, and connected through values. These are the leaders who don’t just adapt to change they create it. They lead not only with their minds but also with their hearts.
               </p>
               <p className="text-sm md:text-base text-justify mb-6">
-                The book also promotes a Whole Brain Leadership mindset, encouraging leaders to use both creative (right-brain) and logical (left-brain) thinking to solve problems and lead effectively. Dr. Verma urges leaders to break free from outdated Industrial Age thinking and adopt modern, future-ready habits and beliefs. This inspiring and practical guide is designed to transform not just leaders but also the people and communities they influence.
+                At the core of this transformative book is the AGILE Leadership Framework:
+                Alive & Adaptive, Grit, Innovation, Learning, and Excellence.
+                This framework equips leaders to navigate the chaos of the VUCA (Volatile, Uncertain, Complex, and Ambiguous) world with clarity, resilience, and strategic foresight.
               </p>
               <p className="text-sm md:text-base text-justify mb-6">
-                Dr. Verma’s key message is simple,"Don’t just think outside the box—get rid of the box altogether.”
+                Dr. Verma also champions a Whole-Brain Leadership Approach, encouraging readers to engage both creative and analytical thinking to lead with balance and impact.
+              </p>
+              <p className="text-sm md:text-base text-justify mb-6">
+                Whether you're an entrepreneur, a corporate professional, or a change-maker, The 10X Leader offers practical tools and powerful insights to move beyond outdated Industrial Age mindsets—and step into the future of conscious, connected, and courageous leadership.
+              </p>
+              <p className="text-sm md:text-base font-bold text-justify mb-6">
+                Don’t just think outside the box.<br />Eliminate the box. Lead beyond limits.
               </p>
 
               <div className="flex space-x-4 mb-6">
