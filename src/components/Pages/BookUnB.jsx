@@ -44,7 +44,7 @@ const BookUnB = () => {
               <div className="flex mb-1">
                 <div className="flex gap-2 my-3">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} size={16} className={i < 4 ? "text-yellow-500 fill-yellow-500" : "text-gray-300"} />
+              <Star key={i} size={16} className={i < 5 ? "text-yellow-500 fill-yellow-500" : "text-gray-300"} />
             ))}
             </div>
 
