@@ -10,7 +10,7 @@ export default function BookCarousel() {
       title: "The 10X Leader",
       author: "Pawan Verma",
       image: "/NonFiction.png",
-      rating: 4,
+      rating: 5,
       categories: ["Non-Fiction", "Leadership"],
       description:
         "DEAR LEADER, THE WORLD AROUND YOU HAS CHANGED. HAVE YOU?\n Leadership expert Dr. Pawan Verma introduces the concept of the 10X leader,a new kind of leader who takes responsibility for making the world a better place. These leaders think big, act with purpose, and use innovative ideas and strong networks to drive positive change in business, society, and everyday life.",
@@ -25,7 +25,7 @@ export default function BookCarousel() {
       title: "Age of the Imperfect Leader",
       author: "Pawan Verma",
       image: "/book5.png",
-      rating: 4,
+      rating: 5,
       categories: ["Non-Fiction", "Leadership"],
       description: `Leadership expert Dr. Pawan Verma breaks the myth that great leaders need to be perfect at everything. Instead, he shows that true leadership success comes from focusing on your biggest strengths and not being afraid of your weaknesses. Backed by real-life stories of well-known leaders, this book offers practical advice for professionals and executives who want to turn leadership challenges into real opportunities. It’s a down-to-earth, insightful guide that helps you grow as a leader and gain a competitive edge in your career and your organization.`,
       readMoreLink:
