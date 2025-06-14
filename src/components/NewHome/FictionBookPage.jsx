@@ -24,7 +24,7 @@ export default function BookCarousel() {
       image: "/Fiction.png",
       rating: 5,
       categories: ["Fiction", "Crime thriller"],
-      description: `"No Closure, No Forgiveness" by Dr. Pawan Verma is a powerful book that explores emotional pain, justice, and the struggle to heal from past traumas. It looks at how people and societies deal with betrayal, grief, and unspoken wounds. Dr.Verma shares deep insights and real stories that show why closure and forgiveness are so hard — especially when the pain is never truly addressed. This thought-provoking book encourages readers to face their emotions, seek truth, and understand the cost of staying silent.`,
+      description: `The Thirsting for Revenge and Yearning for Love! Patrick Brenner is a broken, distraught father, seeking revenge on his wife Irene, whom he considers responsible for the accidental death of his little son David. He is also gunning for Detective Jessica Galloway and her boyfriend Andrew Hoffman, especially since they had helped his son’s killer escape the clutches of law in one of the most horrendous miscarriages of justice the city had ever seen. Since there was no justice, he is now out to deliver justice, all by himself.Detective Jessica Galloway had fallen in love with one of the witnesses, who testified on Irene Brenner’s behalf, leading to her acquittal. She is now torn between her passionate love for Andrew and her compelling urge to hunt down the killer of Irene and bring him to book.Will she be successful? It is going to be a cat-and-mouse game!`,
       readMoreLink: "/book/no-closure-no-forgiveness",
       buyLink: "https://www.amazon.in/Thriller-Closure-Forgiveness-Murder-Revenge-ebook/dp/B01BCG3FKW",
     },
