@@ -25,6 +25,7 @@ import AdminDashboard from "./components/Admin/AdminDashboard";
 import GoToTopButton from "./components/GoToTopButton";
 
 import HeroSection from "./components/NewHome/HeroSection";
+import DownloadPage from "./components/download";
 
 function LayoutWrapper() {
   const location = useLocation();
@@ -55,6 +56,7 @@ function LayoutWrapper() {
         <Route path="/publishing" element={<PublishingPage />} />
         <Route path="/media" element={<MediaPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/download" element={<DownloadPage />} />
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/blogs/:id" element={<BlogDetails />} />
       </Routes>
