@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { CheckCircle, Users, Briefcase, BarChart, Target, ChevronRight } from "lucide-react"
 
 import usero2 from '/user02.jpg'
@@ -31,33 +32,34 @@ const ConsultingPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Management Consulting Services
+              Consulting with Dr. Pawan Verma
             </h1>
 
             <p className="text-xl text-gray-600 mb-4">
-              Strategic guidance for organizations seeking transformative growth and operational excellence
+              Leadership | Insurance | Strategy | Innovation
             </p>
 
             <div className="w-24 h-1 bg-yellow-500 mx-auto mb-10"></div>
 
-            <p className="text-lg text-gray-700 mb-8">
-              With over 35 years of experience in leadership roles across financial services and other sectors, Dr.
-              Pawan Verma provides expert consulting services to help organizations navigate complex challenges and
-              achieve sustainable success.
+            <p className="text-lg text-gray-700 mb-8 text-justify">
+              Dr. Pawan Verma is a globally recognized leadership author, contrarian thinker, and management consultant with over three decades of cross-functional expertise in the financial services industry. With a career that spans corporate strategy, innovation, insurance, and business transformation, he brings a distinctive blend of practical wisdom and visionary thinking to every consulting engagement.
+            </p>
+
+            <p className="text-lg text-gray-700 mb-8 text-justify">
+              A former Chief Operating Officer of the Indo-Japanese joint venture Star Union Dai-ichi Life Insurance, Dr. Verma has also held senior leadership roles at LIC of India, Reliance Group of Industries, and Reliance ADA Group. He has served as Director on the Boards of several institutions, including Delhi Financial Corporation, Delhi Co-operative Housing Finance Corporation, and Innovative Insurance Co. Ltd.
             </p>
 
             <div className="text-center">
-              <button
-                onClick={() => navigate("/contact")}
-                className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
-              >
-                Contact Now
-              </button>
+              <Link
+                  to="/contact"
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300"
+                >
+                  Contact Now
+                </Link>
             </div>
           </div>
         </div>
       </section>
-
 
       {/* Expertise Areas */}
       <section className="py-7 bg-white">
@@ -69,69 +71,77 @@ const ConsultingPage = () => {
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-yellow-500"></div>
               </h2>
               <p className="mt-4 text-gray-600">
-                Specialized consulting services tailored to your organization's unique needs
+                Dr. Verma offers deep consulting capabilities in the following domains:
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-              <div className="bg-[#4d3e1f] text-white  p-6 rounded-lg shadow-sm">
-                <div className="flex items-start mb-4">
-                  <div className="bg-yellow-500 p-2 rounded-full mr-4">
-                    <Briefcase className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Strategic Leadership</h3>
-                    <p className="text-gray-200 text-justify">
-                      Develop effective leadership strategies and frameworks to guide your organization through change
-                      and growth. Learn to embrace the "Imperfect Leader" philosophy for authentic and effective
-                      leadership.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#4d3e1f] text-white  p-6 rounded-lg  shadow-sm">
-                <div className="flex items-start mb-4">
-                  <div className="bg-yellow-500 p-2 rounded-full mr-4">
-                    <BarChart className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Financial Services Optimization</h3>
-                    <p className="text-gray-200 text-justify">
-                      Leverage decades of experience in insurance, banking, and financial services to optimize
-                      operations, improve customer experience, and drive sustainable growth in your financial
-                      institution.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#4d3e1f] text-white  p-6 rounded-lg shadow-sm">
+              <div className="bg-[#4d3e1f] text-white p-6 rounded-lg shadow-sm">
                 <div className="flex items-start mb-4">
                   <div className="bg-yellow-500 p-2 rounded-full mr-4">
                     <Users className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Organizational Transformation</h3>
+                    <h3 className="text-xl font-bold mb-2">Leadership & Organizational Development</h3>
                     <p className="text-gray-200 text-justify">
-                      Guide your organization through critical transitions with strategic planning, change management,
-                      and cultural alignment to ensure successful transformation and sustainable results.
+                      Transforming leadership culture to meet the challenges of a VUCA world.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#4d3e1f] text-white  p-6 rounded-lg shadow-sm">
+              <div className="bg-[#4d3e1f] text-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-start mb-4">
+                  <div className="bg-yellow-500 p-2 rounded-full mr-4">
+                    <Briefcase className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Insurance Industry Strategy</h3>
+                    <p className="text-gray-200 text-justify">
+                      Advisory on market entry, regulatory compliance, product innovation, and customer-centric processes in life, general, and health insurance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#4d3e1f] text-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-start mb-4">
+                  <div className="bg-yellow-500 p-2 rounded-full mr-4">
+                    <BarChart className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Business Growth & Expansion</h3>
+                    <p className="text-gray-200 text-justify">
+                      Crafting scalable strategies for startups, MSMEs, and established organizations venturing into new markets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#4d3e1f] text-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-start mb-4">
+                  <div className="bg-yellow-500 p-2 rounded-full mr-4">
+                    <Users className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Restructuring & Governance</h3>
+                    <p className="text-gray-200 text-justify">
+                      Board-level guidance on corporate governance, organizational restructuring, and strategic realignment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#4d3e1f] text-white p-6 rounded-lg shadow-sm">
                 <div className="flex items-start mb-4">
                   <div className="bg-yellow-500 p-2 rounded-full mr-4">
                     <Target className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Innovation & Digital Strategy</h3>
+                    <h3 className="text-xl font-bold mb-2">Innovation & Digital Transformation</h3>
                     <p className="text-gray-200 text-justify">
-                      Develop and implement innovative approaches to business challenges, including digital
-                      transformation strategies that position your organization for success in rapidly changing markets.
+                      Aligning creativity with execution for competitive advantage in rapidly changing business environments.
                     </p>
                   </div>
                 </div>
@@ -141,6 +151,101 @@ const ConsultingPage = () => {
         </div>
       </section>
 
+      {/* Global Perspective Section */}
+      <section className="py-7 bg-gradient-to-b from-white to-[#f5e9d1]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold inline-block relative">
+                Global Perspective, Local Impact
+                <div className="absolute -bottom-2 left-0 w-full h-1 bg-yellow-500"></div>
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              <p className="text-lg text-gray-700 text-justify">
+                Dr. Verma has consulted for businesses across India and select Asian markets, offering both on-site and remote advisory services. His strategic insights have shaped insurance and financial service landscapes in diverse regulatory and business ecosystems.
+              </p>
+
+              <p className="text-lg text-gray-700 text-justify">
+                He has been on expert panels of several prestigious global knowledge networks, including:
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                  <span className="text-gray-700">Gerson Lehrman Group (USA)</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                  <span className="text-gray-700">Coleman Research Group (USA)</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                  <span className="text-gray-700">Insight Alpha (Singapore)</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                  <span className="text-gray-700">AlphaSights (Hong Kong)</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                  <span className="text-gray-700">Guidepoint (Singapore)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Credentials Section */}
+      <section className="py-7 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold inline-block relative">
+                Credentials & Affiliations
+                <div className="absolute -bottom-2 left-0 w-full h-1 bg-yellow-500"></div>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">MBA from Patna University</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">Doctorate in Management (Honoris Causa), Azteca University, Mexico</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">Fellow, Insurance Institute of India</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">Certified Corporate Director, Institute of Directors, New Delhi</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">Life Member, Bombay Management Association</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">Member, Indian Speaker Bureau -- SpeakIn</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">Represented by London Speaker Bureau</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">Active Rotarian and thought leader</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Dr. Verma */}
       <section className="py-7 mb-5 bg-gradient-to-b mt-5 from-white to-[#f5e9d1]">
@@ -224,126 +329,45 @@ const ConsultingPage = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-
-      {/* <TestimonialsPage testimonials={testimonials} heading={"Consulting"}  /> */}
-
-
-
-      {/* Contact Section */}
-      {/* <section id="contact" className="py-7 bg-gradient-to-b mt-5 from-white to-[#f5e9d1]">
+      {/* Let's Work Together Section */}
+      <section className="py-7 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-12">
               <h2 className="text-3xl font-bold inline-block relative">
-                Request a Consultation
+                Let's Work Together
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-yellow-500"></div>
               </h2>
-              <p className="mt-4 text-gray-600">Take the first step toward transforming your organization</p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Your Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
-                      placeholder="name"
-                       
-                    />
-                  </div>
+            <p className="text-lg text-gray-700 mb-8 text-justify">
+              Whether you are seeking to reshape your leadership strategy, enter a new insurance market, or navigate business transformation, Dr. Verma's consulting approach is collaborative, tailored, and impact-driven.
+            </p>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
-                      placeholder="email"
-                    />
-                  </div>
-                </div>
+            <p className="text-lg text-gray-700 mb-8">
+              For consulting inquiries, please reach out via the Contact Page or email at{" "}<br />
+              <a href="mailto:office@pawanverma.in" className="text-yellow-600 hover:underline">
+                office@pawanverma.in
+              </a>{" "}
+              /{" "}
+              <a href="mailto:office.pawanverma@gmail.com" className="text-yellow-600 hover:underline">
+                office.pawanverma@gmail.com
+              </a>
+            </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                      Company Name 
-                    </label>
-                    <input
-                      type="text"
-                      id="company"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
-                       placeholder="company name"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
-                       placeholder="phone"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
-                    Service of Interest
-                  </label>
-                  <select
-                    id="service"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
-                  >
-                    <option value="">Select a Service</option>
-                    <option value="strategic-leadership">Strategic Leadership</option>
-                    <option value="financial-services">Financial Services Optimization</option>
-                    <option value="organizational-transformation">Organizational Transformation</option>
-                    <option value="innovation">Innovation & Digital Strategy</option>
-                    <option value="other">Other (Please specify)</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Tell us about your needs
-                  </label>
-                  <textarea
-                    id="message"
-                    rows="4"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
-                    placeholder="Please describe your organization's challenges and what you hope to achieve through consulting."
-                  ></textarea>
-                </div>
-
-                <div className="text-center">
-                  <button
-                    type="submit"
-                    className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-md transition duration-300"
-                  >
-                    Submit Inquiry
-                  </button>
-                </div>
-              </form>
+            <div className="text-center">
+              <Link
+                  to="/contact"
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300"
+                >
+                  Get In Touch
+                </Link>
             </div>
           </div>
         </div>
-      </section> */}
-
-
+      </section>
     </div>
   )
 }
 
 export default ConsultingPage
-
