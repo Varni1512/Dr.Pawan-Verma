@@ -6,15 +6,16 @@ export default function DownloadPage() {
     const [downloadStatus, setDownloadStatus] = useState({});
 
     const downloadFile = (type) => {
-        setDownloadStatus((prev) => ({ ...prev, [type]: 'downloading' }));
+        setDownloadStatus(prev => ({ ...prev, [type]: 'downloading' }));
 
         setTimeout(() => {
-            setDownloadStatus((prev) => ({ ...prev, [type]: 'completed' }));
+            setDownloadStatus(prev => ({ ...prev, [type]: 'completed' }));
 
+            // Create download link
             let filename = '';
             switch (type) {
                 case 'resume':
-                    filename = '/Dr.-Pawan-Verma-A-Profile.pdf';
+                    filename = 'Professional_Resume.pdf';
                     break;
                 case 'flyer1':
                     filename = 'Creative_Services_Flyer.pdf';
@@ -24,6 +25,7 @@ export default function DownloadPage() {
                     break;
             }
 
+            // For demo purposes, create a simple text file
             const content = `This is a demo download for: ${filename}\n\nIn a real application, this would be your actual ${type} file.`;
             const blob = new Blob([content], { type: 'text/plain' });
             const url = URL.createObjectURL(blob);
@@ -36,8 +38,9 @@ export default function DownloadPage() {
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
 
+            // Reset after 2 seconds
             setTimeout(() => {
-                setDownloadStatus((prev) => ({ ...prev, [type]: null }));
+                setDownloadStatus(prev => ({ ...prev, [type]: null }));
             }, 2000);
         }, 1000);
     };
@@ -48,50 +51,47 @@ export default function DownloadPage() {
         if (status === 'completed') return 'Downloaded!';
 
         switch (type) {
-            case 'resume':
-                return 'Download Resume';
-            case 'flyer1':
-            case 'flyer2':
-                return 'Download Flyer';
-            default:
-                return 'Download';
+            case 'resume': return 'Download Resume';
+            case 'flyer1': return 'Download Flyer';
+            case 'flyer2': return 'Download Flyer';
+            default: return 'Download';
         }
     };
 
     const getButtonClass = (type) => {
         const status = downloadStatus[type];
-        let baseClass =
-            'w-full px-6 py-4 rounded-xl font-semibold text-lg cursor-pointer transition-all duration-300 transform relative overflow-hidden ';
+        let baseClass = "w-full px-6 py-4 rounded-xl font-semibold text-lg cursor-pointer transition-all duration-300 transform relative overflow-hidden ";
 
         if (status === 'completed') {
-            return baseClass + 'bg-gradient-to-br from-green-500 to-emerald-500 text-white';
+            return baseClass + "bg-gradient-to-br from-green-500 to-emerald-500 text-white";
         }
 
-        return (
-            baseClass +
-            'bg-gradient-to-br from-yellow-500 to-yellow-600 text-white hover:from-yellow-600 hover:to-yellow-700 hover:-translate-y-1 hover:shadow-xl active:translate-y-0'
-        );
+        return baseClass + "bg-gradient-to-br from-yellow-500 to-yellow-600 text-white hover:from-yellow-600 hover:to-yellow-700 hover:-translate-y-1 hover:shadow-xl active:translate-y-0";
     };
 
     return (
-        <div className="min-h-screen py-20 bg-gradient-to-b from-white to-[#f5e9d1] relative overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-b from-white to-[#f5e9d1] relative overflow-hidden">
             {/* Background image overlay */}
             <div className="absolute inset-0 opacity-20 bg-[url('/placeholder.svg')] bg-cover bg-center z-0"></div>
 
-            <div className="relative z-10 max-w-6xl mx-auto bg-white bg-opacity-95 rounded-3xl shadow-2xl overflow-hidden backdrop-blur-sm">
+            <div className="relative z-10 min-h-screen bg-white bg-opacity-95 backdrop-blur-sm">
                 {/* Header */}
-                <header className="relative bg-[#4d3e1f] p-10 text-center text-white overflow-hidden">
+                <header className="relative bg-[#4d3e1f] p-16 text-center text-white overflow-hidden">
                     <img
-                        src="gallery03.png"
+                        src="/gallery03.png"
                         alt="Author"
-                        className="w-32 h-32 rounded-full border-4 border-white mx-auto mb-6 object-cover shadow-2xl"
+                        className="w-32 h-32 rounded-full border-4 border-white mx-auto mb-6 object-cover shadow-2xl relative z-10"
                     />
-                    <h1 className="text-5xl font-bold mb-3">Download Center</h1>
-                    <p className="text-xl opacity-90">Professional Resources & Documents</p>
+                    <h1 className="text-5xl font-bold mb-3 text-shadow relative z-10">
+                        Download Center
+                    </h1>
+                    <p className="text-xl opacity-90 relative z-10">
+                        Professional Resources & Documents
+                    </p>
                 </header>
 
                 {/* Main Content */}
-                <main className="p-16">
+                <main className="px-16 py-20 min-h-[calc(100vh-320px)]">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-black mb-4 relative inline-block">
                             Available Downloads
@@ -100,16 +100,18 @@ export default function DownloadPage() {
                     </div>
 
                     {/* Downloads Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 max-w-7xl mx-auto">
                         {/* Resume Card */}
-                        <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-yellow-500 group">
+                        <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-yellow-500 group min-h-[400px] flex flex-col">
                             <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <FileText className="w-8 h-8" />
                             </div>
 
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-3">Professional Resume</h3>
-                            <p className="text-gray-600 leading-relaxed mb-6">
-                                Download my comprehensive professional resume showcasing my experience, skills, and achievements.
+                            <h3 className="text-2xl font-semibold text-gray-800 mb-3 text-center">
+                                Professional Resume
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed mb-6 text-center flex-grow">
+                                Download my comprehensive professional resume showcasing my experience, skills, and achievements. Perfect for employers and business partners.
                             </p>
                             <button
                                 className={getButtonClass('resume')}
@@ -121,14 +123,16 @@ export default function DownloadPage() {
                         </div>
 
                         {/* Flyer 1 Card */}
-                        <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-yellow-500 group">
+                        <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-yellow-500 group min-h-[400px] flex flex-col">
                             <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <Palette className="w-8 h-8" />
                             </div>
 
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-3">Flyer 1</h3>
-                            <p className="text-gray-600 leading-relaxed mb-6">
-                                Explore my creative services portfolio flyer featuring design capabilities and project samples.
+                            <h3 className="text-2xl font-semibold text-gray-800 mb-3 text-center">
+                                Creative Services Flyer
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed mb-6 text-center flex-grow">
+                                Explore my creative services portfolio flyer featuring design capabilities, project samples, and service offerings for potential clients.
                             </p>
                             <button
                                 className={getButtonClass('flyer1')}
@@ -140,14 +144,16 @@ export default function DownloadPage() {
                         </div>
 
                         {/* Flyer 2 Card */}
-                        <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-yellow-500 group">
+                        <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-yellow-500 group min-h-[400px] flex flex-col">
                             <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <Rocket className="w-8 h-8" />
                             </div>
 
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-3">Flyer 2</h3>
-                            <p className="text-gray-600 leading-relaxed mb-6">
-                                Discover comprehensive business solutions and consulting services in this concise flyer.
+                            <h3 className="text-2xl font-semibold text-gray-800 mb-3 text-center">
+                                Business Solutions Flyer
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed mb-6 text-center flex-grow">
+                                Discover comprehensive business solutions and consulting services. This flyer highlights expertise in strategy, development, and implementation.
                             </p>
                             <button
                                 className={getButtonClass('flyer2')}
@@ -158,26 +164,9 @@ export default function DownloadPage() {
                             </button>
                         </div>
                     </div>
-
-                    {/* Stats Section */}
-                    {/* <div className="bg-gradient-to-r from-yellow-100 to-yellow-50 rounded-2xl p-8">
-            <div className="flex flex-col md:flex-row justify-center gap-12 text-center">
-              <div className="stat-item">
-                <div className="text-4xl font-bold text-yellow-600 mb-2">1,250+</div>
-                <div className="text-gray-600">Downloads</div>
-              </div>
-              <div className="stat-item">
-                <div className="text-4xl font-bold text-yellow-600 mb-2">98%</div>
-                <div className="text-gray-600">Satisfaction Rate</div>
-              </div>
-              <div className="stat-item">
-                <div className="text-4xl font-bold text-yellow-600 mb-2">24/7</div>
-                <div className="text-gray-600">Availability</div>
-              </div>
-            </div>
-          </div> */}
                 </main>
             </div>
         </div>
     );
 }
+
