@@ -14,7 +14,7 @@ export default function DownloadPage() {
             let filename = '';
             switch (type) {
                 case 'resume':
-                    filename = 'Professional_Resume.pdf';
+                    filename = '/Dr.-Pawan-Verma-A-Profile.pdf';
                     break;
                 case 'flyer1':
                     filename = 'Creative_Services_Flyer.pdf';
