@@ -12,7 +12,7 @@ const Footer = () => {
                     {/* Left Column: Branding Content */}
                     <div className="flex flex-col items-center space-y-3">
                         <div>
-                            <img src="/logo.png" alt="Logo" className="w-64 h-auto" />
+                            <img src="/new-logo.jpg" alt="Logo" className="w-80 h-auto" />
                         </div>
 
                         <div className="flex space-x-3 mt-4">
