@@ -22,10 +22,16 @@ const SpeakingPage = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="#experience"
+                  href="#"
                   className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
                 >
-                  Speaking Experience
+                  flyer1
+                </a>
+                <a
+                  href="#"
+                  className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
+                >
+                  flyer2
                 </a>
                 <a
                   href="/contact"
@@ -250,11 +256,11 @@ const SpeakingPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold inline-block relative">
-              See Dr. Verma in Action
+              Watch Dr. Verma in Action
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-yellow-500"></div>
             </h2>
             <p className="mt-4 text-gray-800 max-w-3xl mx-auto">
-              Watch excerpts from Dr. Verma's recent presentations to get a sense of his speaking style and content.
+              Get a glimpse of his energy, stage presence, and impact across global platforms.
             </p>
           </div>
 
