@@ -23,6 +23,7 @@ const Header = () => {
     { label: "Media", href: "/media" },
     { label: "Blogs", href: "/blogs" },
     { label: "Gallery", href: "/gallery" },
+    { label: "Download", href: "/download" },
   ];
 
   const allNavItems = [...mainNavItems, ...moreNavItems];
