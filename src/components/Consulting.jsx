@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { CheckCircle, Users, Briefcase, BarChart, Target, ChevronRight } from "lucide-react"
+import { CheckCircle, Users, Briefcase, BarChart, Target} from "lucide-react"
+import pdf from '/Consulting.pdf'
 
 import usero2 from '/user02.jpg'
 import TestimonialsPage from "./Pages/TestimonialPage";
@@ -50,13 +51,24 @@ const ConsultingPage = () => {
             </p>
 
             <div className="text-center">
-              <Link
+              <div className="inline-flex gap-4">
+                <Link
                   to="/contact"
                   className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300"
                 >
                   Contact Now
                 </Link>
+                <a
+                  href={pdf}
+                  download
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300"
+                >
+                  Consulting Profile
+                </a>
+              </div>
             </div>
+
+
           </div>
         </div>
       </section>
@@ -357,11 +369,11 @@ const ConsultingPage = () => {
 
             <div className="text-center">
               <Link
-                  to="/contact"
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300"
-                >
-                  Get In Touch
-                </Link>
+                to="/contact"
+                className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300"
+              >
+                Get In Touch
+              </Link>
             </div>
           </div>
         </div>
