@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, Palette, Rocket } from 'lucide-react';
+import { FileText, Mic, Briefcase } from 'lucide-react';
 
 
 export default function DownloadPage() {
@@ -15,13 +15,13 @@ export default function DownloadPage() {
             let filename = '';
             switch (type) {
                 case 'resume':
-                    filename = 'Professional_Resume.pdf';
+                    filename = 'profile.pdf';
                     break;
                 case 'flyer1':
-                    filename = 'Creative_Services_Flyer.pdf';
+                    filename = 'Speaking.pdf';
                     break;
                 case 'flyer2':
-                    filename = 'Business_Solutions_Flyer.pdf';
+                    filename = 'Consulting.pdf';
                     break;
             }
 
@@ -125,42 +125,42 @@ export default function DownloadPage() {
                         {/* Flyer 1 Card */}
                         <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-yellow-500 group min-h-[400px] flex flex-col">
                             <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                                <Palette className="w-8 h-8" />
+                                <Mic className="w-8 h-8" />
                             </div>
 
                             <h3 className="text-2xl font-semibold text-gray-800 mb-3 text-center">
-                                Creative Services Flyer
+                                Speaking Profile
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-6 text-center flex-grow">
-                                Explore my creative services portfolio flyer featuring design capabilities, project samples, and service offerings for potential clients.
+                                This flyer showcases expertise in public speaking, motivational sessions, technical workshops, and thought leadership talks tailored for diverse audiences.
                             </p>
                             <button
                                 className={getButtonClass('flyer1')}
                                 onClick={() => downloadFile('flyer1')}
                                 disabled={downloadStatus.flyer1 === 'downloading'}
                             >
-                                {getButtonText('flyer1')}
+                                {getButtonText('')}
                             </button>
                         </div>
 
                         {/* Flyer 2 Card */}
                         <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-yellow-500 group min-h-[400px] flex flex-col">
                             <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                                <Rocket className="w-8 h-8" />
+                                <Briefcase className="w-8 h-8" />
                             </div>
 
                             <h3 className="text-2xl font-semibold text-gray-800 mb-3 text-center">
-                                Business Solutions Flyer
+                                Consulting Profile
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-6 text-center flex-grow">
-                                Discover comprehensive business solutions and consulting services. This flyer highlights expertise in strategy, development, and implementation.
+                                This flyer highlights expertise in strategic planning, digital transformation, product development, and hands-on implementation for long-term impact.
                             </p>
                             <button
                                 className={getButtonClass('flyer2')}
                                 onClick={() => downloadFile('flyer2')}
                                 disabled={downloadStatus.flyer2 === 'downloading'}
                             >
-                                {getButtonText('flyer2')}
+                                {getButtonText('')}
                             </button>
                         </div>
                     </div>
