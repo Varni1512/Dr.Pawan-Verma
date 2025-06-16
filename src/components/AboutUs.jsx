@@ -1,18 +1,10 @@
 import { Link } from 'react-router-dom'
 import img from '/auther01.jpg'
-import pdf from '/Dr.-Pawan-Verma-A-Profile.pdf'
+import pdf from '/profile.pdf'
 
 import {
-  Calendar,
-  Award,
-  Briefcase,
   BookOpen,
-  MapPin,
-  Mail,
-  Phone,
-  ExternalLink,
   CheckCircle,
-  Building2,
   GraduationCap,
   Trophy,
   ChevronRight,
@@ -65,7 +57,7 @@ const AboutPage = () => {
                   download
                   className="group bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300 flex items-center space-x-2"
                 >
-                  <span>Download Resume</span>
+                  <span>Download profile</span>
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     className="h-5 w-5 transform group-hover:translate-y-1 transition-transform duration-300" 
