@@ -30,16 +30,15 @@ function Contactus() {
                 <div>
                   <p className="text-gray-400">Phone Number</p>
                   <div className="space-y-2">
-                    <p className="text-white font-medium">Mobile: (+91) 98765-43210</p>
-                    <p className="text-white font-medium">Office: (+91) 98765-43210</p>
+                    <p className="text-white font-medium">Mobile: (+91) 9322249691</p>
                   </div>
                 </div>
 
                 <div>
                   <p className="text-gray-400">Email Address</p>
                   <div className="space-y-2">
-                    <p className="text-white font-medium">Personal: Personal – office.pawanverma@gmail.com</p>
-                    <p className="text-white font-medium">Business: office@pawanverma.in</p>
+                    <p className="text-white font-medium">office.pawanverma@gmail.com</p>
+                    <p className="text-white font-medium">office@pawanverma.in</p>
                   </div>
                 </div>
               </div>
