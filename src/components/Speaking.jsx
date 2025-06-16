@@ -1,7 +1,8 @@
 import img2 from '/gallery01.jpeg'
 import { useRef } from "react"
-import { Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Youtube, CheckCircle } from "lucide-react"
+import { CheckCircle } from "lucide-react"
 // import { Link } from 'react-router-dom'
+import pdf from '/Speaking.pdf'
 
 const SpeakingPage = () => {
 
@@ -22,16 +23,11 @@ const SpeakingPage = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="#"
+                  href={pdf}
+                  download
                   className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
                 >
-                  flyer1
-                </a>
-                <a
-                  href="#"
-                  className="bg-[#f39c12] text-white px-6 py-2 rounded-sm hover:bg-[#e67e22] transition duration-300"
-                >
-                  flyer2
+                  Speaking Profile
                 </a>
                 <a
                   href="/contact"
