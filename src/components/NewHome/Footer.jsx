@@ -79,14 +79,13 @@ const Footer = () => {
                     <div className="space-y-6">
                         <div>
                             <h3 className="text-white text-lg font-bold mb-2">Phone Number</h3>
-                            <p className="text-gray-400">Mobile: (+91) 98765-43210</p>
-                            <p className="text-gray-400">Office: (+91) 98765-43210</p>
+                            <p className="text-gray-400">Mobile: (+91) 9322249691</p>
                         </div>
 
                         <div>
                             <h3 className="text-white text-lg font-bold mb-2">Email Address</h3>
-                            <p className="text-gray-400">Personal: office.pawanverma@gmail.com</p>
-                            <p className="text-gray-400">Business: office@pawanverma.in</p>
+                            <p className="text-gray-400">office.pawanverma@gmail.com</p>
+                            <p className="text-gray-400">office@pawanverma.in</p>
                         </div>
                     </div>
 
